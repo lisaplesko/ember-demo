@@ -4,6 +4,7 @@
 
 <ul>
   {{#each person in controller}}
-    <li>{{person.name}}</li>
+    <li>{{link-to person.name 'people.show' person}}</li>
+    <!-- 3 args: 1st: text that shows up, 2nd: path, 3rd: MODEL we're interracting with -->
   {{/each}}
 </ul>

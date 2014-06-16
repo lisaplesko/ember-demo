@@ -1,0 +1,12 @@
+<h3>Create a new person</h3>
+
+<div>
+Name: {{input value=name}}
+</div>
+
+<div>
+Age: {{input value=age}}
+</div>
+
+{{!-- Action HAS to be declared inside the markup for the button!! --}}
+<button type="submit" {{action 'create'}}>Create</button>
